@@ -1,0 +1,5 @@
+02/10/2021
+clariostar.py: 180
+old: ('time', r"(?<=Time:\s)(\d*):(\d*):(\d*)\s(\S*)(?='\])"),
+new: ('time', r"(?<=Time:\s)(\d*):(\d*):(\d*)\s(\SM)"),
+reason: The default time format in header files generated on 00002 is "h:mm:ss AM/PM (UTC-5)". The "UTC-5" string is preventing proper time stamping.
